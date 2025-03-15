@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Mjolnir Smash</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Three.js CDN -->
+    <script src='https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js'></script>
+    <!-- GLTFLoader for loading 3D models -->
+    <script src='https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/loaders/GLTFLoader.js'></script>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        
+        <div id="ui-container">
+            <div id="start-screen" class="game-screen">
+                <h1>Mjolnir Smash</h1>
+                <button id="start-button">Start Game</button>
+            </div>
+            
+            <div id="game-ui">
+                <div id="score-container">
+                    <span id="score-label">Score:</span>
+                    <span id="score">0</span>
+                </div>
+            </div>
+            
+            <div id="game-over" class="game-screen">
+                <h2>Game Over</h2>
+                <div id="final-score-container">
+                    <span>Final Score:</span>
+                    <span id="final-score">0</span>
+                </div>
+                <button id="restart-button">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/thor.js"></script>
+    <script src="js/mjolnir.js"></script>
+    <script src="js/objects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
