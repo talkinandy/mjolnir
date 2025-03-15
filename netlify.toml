@@ -1,0 +1,15 @@
+[build]
+  # This is a static site, so we don't need a build command
+  publish = "."
+  
+[dev]
+  framework = "#static"
+  
+[[headers]]
+  # Define headers for all files
+  for = "/*"
+    [headers.values]
+    # Enable CORS
+    Access-Control-Allow-Origin = "*"
+    # Cache control
+    Cache-Control = "public, max-age=86400" 
